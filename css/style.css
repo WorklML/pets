@@ -1,0 +1,654 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/marck-script-v20-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+h1{
+    font-family: Marck Script;
+   text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.index{
+    background-image: url(../img/fon7.png);
+    /* background: linear-gradient(180deg,rgb(74, 74, 240), rgb(59, 14, 85),rgb(0, 0, 0)); */
+    background-size: cover;
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_nav{
+    /* background-color:  rgb(114, 114, 220); */
+    /* linear-gradient(180deg,rgb(158, 146, 215),rgb(114, 114, 220)) */
+    background-image:url(../img/header.png) ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+}
+
+/* rgb(190, 137, 106) */
+
+.header_nav a {
+    color: rgb(143, 227, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 20px 45px;
+    /* background-color:  rgb(114, 114, 220) ; */
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.header_nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.header_nav ul li:hover {
+    background-color: rgb(55, 68, 129);
+    transition: all .5s;
+
+}
+
+.header_nav a:hover {
+
+    opacity: .7;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+
+.active {
+
+    background-color: rgb(80, 80, 80);
+}
+
+
+.animals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.cat {
+    height: 200px;
+    transition: 3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -500px right 0/350px auto;
+}
+
+.cat:hover {
+    height: 300px;
+    transition: 3s;
+    cursor: pointer;
+    background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -20px right 0/350px auto;
+
+}
+
+
+
+.cat_avatar_{
+    height:50px ;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    border:1px solid white;
+    position: absolute;
+    left: 100px;
+    top: 130px;
+    transition: all .2s ;
+}
+
+
+.cat_avatar_:hover{
+    border:2px solid white;
+
+    transition: all .2s ;
+}
+
+.cat_phrase {
+    width: 800px;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    font-weight: 600;
+    padding-left: 5vw;
+    overflow: hidden;
+}
+
+
+h2{
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dog_avatar_{
+    height:50px ;
+    width: 50px;
+    margin-top: 23px;
+    cursor: pointer;
+    border-radius: 50%;
+    border:1px solid white;
+    position: absolute;
+    left: 110px;
+    transition: all .2s ;
+}
+
+
+.dog_avatar_:hover{
+    border:2px solid white;
+    transition: all .2s ;
+}
+
+.dogs {
+    height: 200px;
+    transition: 3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -500px right 0/350px auto;
+}
+
+.dogs:hover {
+    height: 300px;
+    transition: 3s;
+    cursor: pointer;
+    background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -80px right 0/350px auto;
+
+}
+
+.dogs_phrase {
+    width: 800px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 5vw;
+    overflow: hidden;
+}
+
+.promo_text_crad>h2,p{
+    font-size: 15px;
+    color: white;
+}
+
+
+.index1{
+    background-image: url(../img/fon2_for_cat.jpg) ;
+    /* background: linear-gradient(180deg,rgb(74, 74, 240), rgb(59, 14, 85),rgb(0, 0, 0)); */
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap_pictures{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    background-image: url(../img/fon3_for_cat.jpg) ;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    border-radius: 30px;
+    z-index: -100;
+
+}
+
+
+.pict{
+    height: 450px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+    border: 1px solid white;
+    animation: cat 20s infinite  ;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    z-index: 999;
+   
+    
+
+}
+
+.item1{
+    background-image: url(../img/perscat.jpg);
+    
+}
+
+
+.item2{ 
+    background-image: url(../img/birmcat.jpg);
+    animation-delay: 5s;
+    
+}
+
+.item3{
+    background-image: url(../img/britshortcat.jpg);
+    animation-delay: 10s;
+    
+}
+
+.item4{
+    background-image: url(../img/maycun.jpg);
+    animation-delay: 15s;
+    
+}
+
+@keyframes cat{
+    0%{
+        position: absolute;
+        right: 0px;
+        opacity: 0;
+    }
+
+    20%{
+        position: absolute;
+        right: 500px;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        position: absolute;
+        right:1080px;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+.pict1{
+    height: 450px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+    border: 1px solid white;
+    animation: dog 20s infinite ;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    z-index: 999;
+   
+    
+
+}
+
+
+.item11{
+    background-image: url(../img/goldretv.jpg);
+    
+}
+
+
+.item22{ 
+    background-image: url(../img/labrretv.jpg);
+    animation-delay: 5s;
+    
+}
+
+.item33{
+    background-image: url(../img/bigl.jpg);
+    animation-delay: 10s;
+    
+}
+
+.item44{
+    background-image: url(../img/pudel.jpg);
+    animation-delay: 15s;
+    
+}
+
+@keyframes dog{
+    0%{
+        position: absolute;
+        right: 0px;
+        opacity: 0;
+    }
+
+    20%{
+        position: absolute;
+        right: 500px;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        position: absolute;
+        right:1080px;
+        opacity: 0;
+    }
+}
+
+/* @keyframes dog{
+    0%{
+        position: absolute;
+        right: 0px;
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+
+    20%{
+        position: absolute;
+        right: 500px;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+   
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        position: absolute;
+        right:1080px;
+        opacity: 0;
+    }
+}
+ */
+
+@media(max-width:1200px){
+    .cat {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -800px right 0/cover;
+    }
+    
+    .cat:hover {
+        height: 300px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -170px right 0/cover;
+    
+    }
+
+    .cat_phrase {
+        width: 800px;
+        font-size: 18px;
+        text-align: justify;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        font-weight: 600;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+    
+    .dogs {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -100px right 0/cover;
+    }
+    
+    .dogs:hover {
+        height: 400px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -650px right 0/cover;
+    
+    }
+
+    .dogs_phrase {
+        width: 800px;
+        font-size: 18px;
+        text-align: justify;
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 5px black;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+
+    .index1{
+        background-image: url(../img/fon2_for_cat.jpg);
+        background-size: cover;
+        width: 600px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+    
+    
+    }
+
+@media(max-width:950px){
+    .cat {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -600px right 0/cover;
+    }
+    
+    .cat:hover {
+        height: 300px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -170px right 0/cover;
+    
+    }
+
+    .cat_phrase {
+        width: 800px;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        font-weight: 600;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+    
+    .dogs {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -100px right 0/cover;
+    }
+    
+    .dogs:hover {
+        height: 400px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -460px right 0/cover;
+    
+    }
+
+    .dogs_phrase {
+        width: 800px;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 5px black;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+
+    @keyframes cat{
+        0%{
+            position: absolute;
+            right: -3400px;
+            opacity: 0;
+        }
+    
+        5%{
+            opacity: 1;
+        }
+    
+        50%{
+            position: absolute;
+            right: 300px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+       
+        70%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
+    }
+
+
+
+
+
+   
+   
+}
+
+
+
+
+
+
+@media(max-width:850px){
+    .cat {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -400px right 0/cover;
+    }
+    
+    .cat:hover {
+        height: 300px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/cat1.png) no-repeat bottom -120px right 0/cover;
+    
+    }
+
+    .cat_phrase {
+        width: 700px;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        font-weight: 600;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+    
+    .dogs {
+        height: 200px;
+        transition: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -100px right 0/cover;
+    }
+    
+    .dogs:hover {
+        height: 400px;
+        transition: 3s;
+        cursor: pointer;
+        background:rgb(7, 7, 62) url(../img/dog2.png) no-repeat bottom -320px right 0/cover;
+    
+    }
+
+    .dogs_phrase {
+        width: 700px;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 5px black;
+        padding-left: 5vw;
+        overflow: hidden;
+    }
+
+    @keyframes dog{
+        0%{
+            position: absolute;
+            right: 0px;
+            opacity: 0;
+        }
+    
+        20%{
+            position: absolute;
+            right: 150px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        30%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
+    }
+}
