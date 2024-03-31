@@ -47,7 +47,6 @@ h1{
 
 }
 
-/* rgb(190, 137, 106) */
 
 .header_nav a {
     color: rgb(143, 227, 255);
@@ -209,6 +208,7 @@ h2{
     /* background: linear-gradient(180deg,rgb(74, 74, 240), rgb(59, 14, 85),rgb(0, 0, 0)); */
     background-size: cover;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -461,15 +461,57 @@ h2{
         overflow: hidden;
     }
 
-    .index1{
-        background-image: url(../img/fon2_for_cat.jpg);
-        background-size: cover;
-        width: 600px;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    @keyframes cat{
+        0%{
+            position: absolute;
+            right: 0px;
+            opacity: 0;
+        }
+    
+        20%{
+            position: absolute;
+            right: 250px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        30%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
     }
+
+
+    @keyframes dog{
+        0%{
+            position: absolute;
+            right: 0px;
+            opacity: 0;
+        }
+    
+        20%{
+            position: absolute;
+            right: 250px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        30%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
+    }
+
   
     
     
@@ -533,22 +575,18 @@ h2{
     @keyframes cat{
         0%{
             position: absolute;
-            right: -3400px;
+            right: 0px;
             opacity: 0;
         }
     
-        5%{
-            opacity: 1;
-        }
-    
-        50%{
+        20%{
             position: absolute;
-            right: 300px;
+            right: 350px;
             transform: scale(1.1);
             opacity: 1;
         }
-       
-        70%{
+    
+        40%{
             opacity: 0;
         }
     
@@ -558,6 +596,34 @@ h2{
             opacity: 0;
         }
     }
+
+
+    @keyframes dog{
+        0%{
+            position: absolute;
+            right: 0px;
+            opacity: 0;
+        }
+    
+        20%{
+            position: absolute;
+            right: 150px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        30%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
+    }
+    
+        
 
 
 
@@ -651,4 +717,32 @@ h2{
             opacity: 0;
         }
     }
+
+    @keyframes cat{
+        0%{
+            position: absolute;
+            right: 0px;
+            opacity: 0;
+        }
+    
+        20%{
+            position: absolute;
+            right: 150px;
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        30%{
+            opacity: 0;
+        }
+    
+        100%{
+            position: absolute;
+            right:1080px;
+            opacity: 0;
+        }
+    }
+    
+        
+
 }
